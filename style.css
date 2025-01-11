@@ -10,27 +10,25 @@
 }
 
 body {
-  max-width: 1280px;
-  margin-left: auto;
-  margin-right: auto;
   font-family: "Fira Sans", serif;
   background-color: #f5f5f5;
 }
-
-.container {
-  max-width: 1170px;
-  margin: auto;
-  overflow: hidden;
-  padding: 0 20px;
-}
-
 /* Header */
 
 header {
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
   min-height: 100px;
+}
+
+main {
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .main-logo {
@@ -73,6 +71,27 @@ nav ul {
   color: #006a50;
 }
 
+/* Typography */
+
+.section-title {
+  color: #0e0e0e;
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 24px;
+}
+
+.section-title--margin-bottom-less {
+  margin-bottom: 16px;
+}
+
+.section-description {
+  color: rgba(14, 14, 14, 0.7);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  margin-bottom: 32px;
+}
+
 /* Hero Section */
 
 .hero {
@@ -83,12 +102,12 @@ nav ul {
   gap: 64px;
   min-height: 560px;
   padding: 80px 60px;
-  background-color: #C6E4D6;
+  background-color: #c6e4d6;
   border-radius: 24px;
 }
 
 .hero-sub-title {
-  color: rgba(14,14,14,0.5);
+  color: rgba(14, 14, 14, 0.5);
   font-size: 24px;
   font-weight: 500;
 }
@@ -103,4 +122,345 @@ h1 {
 .hero-image {
   width: 100%;
   max-width: 475px;
+}
+
+/* The Vision of Future */
+
+.vision {
+  margin-top: 80px;
+}
+
+/* cards styling */
+
+.vision-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(410px, 1fr));
+  gap: 24px;
+}
+
+.vision-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 32px;
+  border-radius: 16px;
+  min-height: 325px;
+}
+
+.vision-card--1 {
+  background-color: rgba(84, 144, 245, 0.2);
+}
+.vision-card--2 {
+  background-color: #c6e4d6;
+}
+.vision-card--3 {
+  background-color: #f7ebcf;
+}
+
+.vision-card--small-padding {
+  padding: 24px;
+}
+
+.vision-card-title {
+  color: rgba(14, 14, 14, 0.8);
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 24px;
+  margin-bottom: 12px;
+}
+
+.vision-card-description {
+  color: rgba(14, 14, 14, 0.7);
+  font-size: 16px;
+  font-weight: 400;
+}
+
+button.vision-card-btn {
+  cursor: pointer;
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 11px 20px;
+  border: none;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  margin-top: auto;
+}
+
+button.vision-card-btn:hover {
+  background-color: #006a50;
+}
+
+.card-btn-1 {
+  background-color: #5490f5;
+}
+
+.card-btn-2 {
+  background-color: #09a15c;
+}
+
+.card-btn-3 {
+  background-color: #ffc239;
+}
+
+/* Dr. Muhammad Yunus Speech */
+
+.speech {
+  margin-top: 32px;
+  background-image: url("assets/quote-bg.png");
+  background-size: 64px;
+  background-position: 25px 24px;
+  background-repeat: no-repeat;
+  background-color: #fff;
+  border-radius: 16px;
+  padding: 48px 24px;
+}
+
+.speech-description {
+  color: rgba(14, 14, 14, 0.8);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  margin-bottom: 12px;
+}
+
+.speech-author {
+  color: rgba(14, 14, 14, 0.8);
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.speech-author-title {
+  color: rgba(14, 14, 14, 0.6);
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+}
+
+/* 3. Recent News */
+
+.news {
+  margin-top: 80px;
+}
+
+.news-cards {
+  margin-top: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.news-card--reverse {
+  flex-direction: row-reverse;
+}
+
+.news-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 32px;
+  background-color: #fff;
+  border-radius: 24px;
+  padding: 48px;
+}
+
+.news-card-img {
+  border-radius: 24px;
+}
+
+.news-card-title {
+  color: rgba(14, 14, 14, 0.8);
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 12px;
+}
+
+.news-card-date-time {
+  color: rgba(14, 14, 14, 0.7);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  margin: 12px 0 12px;
+  display: flex;
+  gap: 12px;
+}
+
+.news-card-description {
+  max-width: 744px;
+  color: rgba(14, 14, 14, 0.7);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  margin-bottom: 32px;
+}
+
+.news-btn {
+  padding: 13px 26px;
+}
+
+/* 4. Donate For Bangladesh */
+.donate {
+  margin: 80px auto;
+  text-align: center;
+}
+
+.donate-desc {
+  max-width: 1104px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.donate-amounts {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+
+.donate-btn {
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 16px;
+  color: rgba(14, 14, 14, 0.8);
+  font-size: 40px;
+  font-weight: bold;
+  border: none;
+  box-shadow: inset 0 0 0 1px rgba(14, 14, 14, 0.15);
+  transition: all 0.3s ease;
+}
+
+.donate-btn:hover {
+  background-color: #006a50;
+  color: #fff;
+}
+
+.donate-btn-selected {
+  background-color: #c6e4d6;
+}
+
+.donate-input {
+  display: flex;
+  width: 100%;
+  max-width: 1032px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+  font-size: 20px;
+  font-weight: 400;
+  color: rgba(14, 14, 14, 1);
+  border: none;
+  outline: none;
+  box-shadow: inset 0 -1px 0 0 rgba(14, 14, 14, 0.15);
+  margin: 32px auto;
+  text-align: center;
+}
+
+.donate-input::placeholder {
+  font-size: 20px;
+  font-weight: 400;
+  color: rgba(14, 14, 14, 0.3);
+}
+
+.donate-input:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px #006a50;
+}
+
+.donate-now-btn {
+  padding: 17px 34px;
+}
+
+/* 5. Newsletter Section */
+
+.subscribe {
+  background-color: #c6e4d6;
+  padding: 80px;
+  border-radius: 24px;
+  text-align: center;
+}
+
+.subscribe-desc {
+  max-width: 750px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 24px;
+}
+
+.subscribe-form {
+  display: flex;
+  max-width: 622px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.subscribe-email {
+  padding: 16px 40px;
+  width: 100%;
+  font-size: 16px;
+  font-weight: 400;
+  border: none;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+
+.subscribe-email::placeholder {
+  font-size: 16px;
+  font-weight: 400;
+  color: rgba(14, 14, 14, 0.3);
+}
+
+.subscribe-email:focus {
+  outline: none;
+  box-shadow: inset 0 0 0 2px #006a50;
+}
+
+.subscribe-btn {
+  cursor: pointer;
+  padding: 17px 34px;
+  border: none;
+  background-color: #006a50;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 22px;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  transition: all 0.3s ease;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.subscribe-btn:hover {
+  background-color: #fff;
+  color: #006a50;
+  box-shadow: inset 0 0 0 2px #006a50;
+}
+
+.spam-msg {
+  margin-top: 24px;
+}
+
+/* Footer */
+
+footer {
+  margin: 80px 0 0;
+  padding: 50px;
+  text-align: center;
+  background-color: #fff;
+}
+.divider {
+  background-color: rgba(14, 14, 14, 0.1);
+  height: 1px;
+  max-width: 1122px;
+  margin: 32px auto;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 23px;
 }
