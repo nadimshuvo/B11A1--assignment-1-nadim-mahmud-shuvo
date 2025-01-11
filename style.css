@@ -215,6 +215,7 @@ button.vision-card-btn:hover {
   background-position: 25px 24px;
   background-repeat: no-repeat;
   background-color: #fff;
+  border: 1px solid rgba(14, 14, 14, 0.15);
   border-radius: 16px;
   padding: 48px 24px;
 }
